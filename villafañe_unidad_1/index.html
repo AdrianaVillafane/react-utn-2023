@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Solicitud de Contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Seguro No Pagamos Coperativa</h1>
+    </header>
+    <main>
+
+        <div class="container">
+            <h2>Solicitar Contacto</h2>
+            <form action="procesar.php" method="post" class="form">
+
+                <label for="nombre">Nombre:
+                    <input type="text" id="name" name="nombre" required>
+                </label>
+
+                <label for="apellido">Apellido:
+                    <input type="text" id="lastName" name="apellido" required>
+                </label>
+                <label for="dni">DNI:
+                    <input type="text" id="dni" name="dni" required>
+                </label>
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label for="telefono">Teléfono:
+                    <input type="tel" id="telefono" name="telefono" required>
+                </label>
+                <label for="tipoSeguro">Tipo de Seguro:
+                    <select id="tipoSeguro" name="tipoSeguro" required>
+                        <option value="tipoSeguro">Elija</option>
+                        <option value="basico">Basico</option>
+                        <option value="intermedio">Intermedio</option>
+                        <option value="premium">Premium</option>
+                    </select></label>
+
+
+
+                <button type="submit">Solicitar Contacto</button>
+
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <samp>© Adriana Villafañe, Oct-2023</samp>
+    </footer>
+</body>
+<script src="app/app.js"></script>
+</html>
